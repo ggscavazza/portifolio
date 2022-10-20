@@ -1,4 +1,4 @@
-# Página Web para descobrir o signo
+## Página Web para descobrir o signo
 ### Técnologias usadas:
 * HTML
 * CSS
