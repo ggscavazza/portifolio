@@ -1,5 +1,7 @@
 <?php
 
+namespace Genesis\Banco\Modelo\Conta;
+
 class Conta {
     // definir dados da conta
     private object $titular;

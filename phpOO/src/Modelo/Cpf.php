@@ -1,5 +1,7 @@
 <?php
 
+namespace Genesis\Banco\Modelo;
+
 class Cpf{
     private string $numero;
 

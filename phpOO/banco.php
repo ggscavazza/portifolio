@@ -1,9 +1,11 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/Cpf.php';
+require_once 'autoload.php';
+
+use Genesis\Banco\Modelo\Conta\Conta;
+use Genesis\Banco\Modelo\Endereco;
+use Genesis\Banco\Modelo\Conta\Titular;
+use Genesis\Banco\Modelo\Cpf;
 
 $endereco = new Endereco("São Paulo", "Sítio da Figueira", "Av. Engenheiro Thomaz Magalhães", "225");
 

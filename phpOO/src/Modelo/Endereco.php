@@ -1,5 +1,7 @@
 <?php
 
+namespace Genesis\Banco\Modelo;
+
 class Endereco
 {
     private string $cidade;

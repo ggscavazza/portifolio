@@ -1,8 +1,11 @@
 <?php
+
+namespace Genesis\Banco\Modelo;
+
 class Pessoa
 {
-    public string $nome;
-    public CPF $cpf;
+    protected string $nome;
+    private CPF $cpf;
 
     public function __construct(string $nome, CPF $cpf)
     {
@@ -11,7 +14,7 @@ class Pessoa
         $this->cpf = $cpf;
     }
 
-        public function recuperaNome(): string
+    public function recuperaNome(): string
     {
         return $this->nome;
     }
@@ -21,8 +24,9 @@ class Pessoa
         return $this->cpf->recuperaCpf();
     }
 
-    public function validaNomeTitular(string $nomeTitular){
-        if(strlen($nomeTitular) < 5) {
+    protected function validaNomeTitular(string $nomeTitular)
+    {
+        if (strlen($nomeTitular) < 5) {
             echo "Nome precisa ter pelo menos 5 caracteres";
             exit();
         }
